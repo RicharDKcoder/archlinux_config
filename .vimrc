@@ -45,7 +45,7 @@ Plug 'easymotion/vim-easymotion'
 "surround       ys cs ds 
 Plug 'tpope/vim-surround'
 "fzf
-Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf',{ 'do': { -> fzf#install() }}
 Plug 'junegunn/fzf.vim'
 "vim-man
 Plug 'vim-utils/vim-man'
