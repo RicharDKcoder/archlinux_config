@@ -139,11 +139,19 @@ bindsym $Mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # style
 #hide_edge_borders smart
 for_window [class="^.*"] border pixel 8
+for_window [class="albert"] border pixel 0
 # gaps inner 3
 # gaps outer 3
 font pango:monospace 8
 # font pango:hack 9
 workspace_layout default
+
+
+
+
+
+
+
 
 # init
 exec_always --no-startup-id xset s 0  
@@ -155,13 +163,13 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # variables
 set $Term alacritty
-set $Browser chromium
+set $Browser google-chrome
 set $Explorer ranger
 set $Lock i3lock-fancy-multimonitor
 set $Blur 5x2
 
 # application
-assign [class="Chromium"] $ws2
+assign [class="google-chrome"] $ws2
 assign [class="netease-cloud-music"] $ws6
 #for_window [name="htop"] floating enable
 
